@@ -19,6 +19,7 @@
     }
     addLanguage("python")
     addLanguage("typescript")
+    addLanguage("Cpp ")
 
     function addOptiLanguage(langName){
         const li = document.createElement('li');
@@ -29,19 +30,19 @@
 
     //Edit
     const secondLang = document.querySelector("li:nth-child(2)")
-    console.log(secondLang);
+    // console.log(secondLang);
     //secondLang.innerHTML = "Mojo"
     const newli = document.createElement('li')
     newli.textContent = "Mojo"
-    secondLang.replaceWith(newli)
+    secondLang.replaceWith(newli) // python repalce by Mojo
 
     //edit
     const firstLang = document.querySelector("li:first-child")
-    firstLang.outerHTML = '<li>TypeScript</li>'
+    firstLang.outerHTML = '<li>TypeScript</li>' // javascript is replaced by Typecsript
 
     //remove
     const lastLang = document.querySelector('li:last-child')
-    lastLang.remove()
+    lastLang.remove() // golang will removed
 
 
 </script>
