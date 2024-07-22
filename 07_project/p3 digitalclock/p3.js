@@ -1,15 +1,3 @@
-
-
-// const clock = document.getElementById('clock');
-
-// setInterval(function () {
-//     let date = new Date();
-//     let currentTime = date.toLocaleTimeString();
-//     let currentDate = date.toLocaleDateString();
-//     clock.innerHTML = `${currentDate} ${currentTime}`;
-// }, 1000);
-
-
 const clock = document.getElementById('clock');
 
 setInterval(function () {
