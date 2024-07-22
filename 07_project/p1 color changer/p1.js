@@ -6,6 +6,7 @@ buttons.forEach(function (button) {
   button.addEventListener('click', function (e) {
     console.log(e);
     console.log(e.target);
+    // selecting all the buttons with their id
     if (e.target.id === 'grey') {
       body.style.backgroundColor = e.target.id;
     }
