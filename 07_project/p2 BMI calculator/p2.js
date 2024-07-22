@@ -11,7 +11,6 @@ form.addEventListener('submit', function (e) {
     } else if (isNaN(weight) || weight <= 0) {
         results.innerHTML = `Please give a valid weight: ${weight}`;
     } else {
-        // Unit is kg per meter square
         const bmi = (weight / ((height * height) / 10000)).toFixed(2);
         // Show result
         results.innerHTML = `<span>${bmi}</span>`;
