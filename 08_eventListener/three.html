@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141" >
+    <h1 id="1">Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    let repl
+    const changeh1 = function(){
+        document.querySelector('h1').innerHTML= "Hello Aman"
+        document.querySelector('h1').style.color= 'green'
+    }
+    document.getElementById('start').addEventListener('click', function(e){
+        repl = setInterval(changeh1, 3000) // h1 replaced after 3 second
+        
+    })
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(repl);
+    })
+</script>
+</html>
